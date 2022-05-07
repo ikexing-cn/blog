@@ -1,11 +1,14 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "baseUrl": "./",
+        "baseUrl": ".",
         "jsx": "preserve",
         "paths": {
             "@/*": [
-                "src/*"
+                "./src/*"
+            ],
+            "@blog/*": [
+                "../*/dist/"
             ]
         }
     }

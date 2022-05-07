@@ -7,7 +7,7 @@
         "baseUrl": ".",
         "paths": {
             "@blog/*": [
-              "./packages/*/src/"
+              "./packages/*/dist/"
             ]
         }
     },
