@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es2017",
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@blog/*": [
+              "./packages/*/src/"
+            ]
+        }
+    },
+    "include": [
+        "packages/**/src/**/*"
+    ]
+}

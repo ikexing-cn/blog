@@ -1,0 +1,20 @@
+{
+  "name": "@blog/shared",
+  "private": true,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "api": "tsrpc api --config tsrpc.config.ts && cd ../server && eslint ./src/api/*.ts --fix",
+    "proto": "tsrpc proto --config tsrpc.config.ts && eslint ./src/serviceProto.ts --fix"
+  },
+  "dependencies": {
+    "tsrpc-proto": "^1.4.2"
+  }
+}

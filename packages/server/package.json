@@ -1,0 +1,11 @@
+{
+    "name": "@blog/server",
+    "private": true,
+    "scripts": {
+        "dev": "tsrpc dev"
+    },
+    "dependencies": {
+        "@blog/shared": "workspace:*",
+        "tsrpc": "^3.3.1"
+    }
+}
