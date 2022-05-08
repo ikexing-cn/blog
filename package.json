@@ -1,6 +1,11 @@
 {
   "name": "blog",
   "private": true,
+  "scripts": {
+    "build": "cd packages/shared && nr proto && nr api && nr build",
+    "dev:page": "cd packages/page && nr dev",
+    "dev:server": "cd packages/server && nr dev"
+  },
   "devDependencies": {
     "@types/node": "^17.0.31",
     "@typescript-eslint/eslint-plugin": "^5.22.0",

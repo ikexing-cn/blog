@@ -5,7 +5,11 @@ const tsrpcConf: TsrpcConfig = {
         autoApi: false,
         autoSync: false,
         autoProto: false,
-        autoFillNewPtl: false
+        autoFillNewPtl: false,
+        watch: [
+            'src',
+            '../shared/dist'
+        ]
     }
 }
 

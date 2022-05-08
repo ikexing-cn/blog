@@ -6,6 +6,7 @@
     },
     "dependencies": {
         "@blog/shared": "workspace:*",
+        "mongoose": "^6.3.2",
         "tsrpc": "^3.3.1"
     }
 }
