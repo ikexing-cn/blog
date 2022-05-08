@@ -32,26 +32,6 @@ importers:
       unbuild: 0.7.4
       vite: 2.9.8
 
-  packages/admin:
-    specifiers: {}
-
-  packages/page:
-    specifiers:
-      '@blog/shared': workspace:*
-      '@vitejs/plugin-vue': ^2.3.2
-      '@vue/cli-plugin-eslint': ^5.0.4
-      eslint-plugin-vue: ^8.7.1
-      tsrpc-browser: ^3.3.0
-      vue: ^3.2.33
-    dependencies:
-      '@blog/shared': link:../shared
-      tsrpc-browser: 3.3.0
-      vue: 3.2.33
-    devDependencies:
-      '@vitejs/plugin-vue': 2.3.2_vue@3.2.33
-      '@vue/cli-plugin-eslint': 5.0.4
-      eslint-plugin-vue: 8.7.1
-
   packages/server:
     specifiers:
       '@blog/shared': workspace:*
@@ -67,6 +47,26 @@ importers:
       tsrpc-proto: ^1.4.2
     dependencies:
       tsrpc-proto: 1.4.2
+
+  pages:
+    specifiers:
+      '@blog/shared': workspace:*
+      '@vitejs/plugin-vue': ^2.3.2
+      '@vue/cli-plugin-eslint': ^5.0.4
+      eslint-plugin-vue: ^8.7.1
+      tsrpc-browser: ^3.3.0
+      vue: ^3.2.33
+    dependencies:
+      '@blog/shared': link:../packages/shared
+      tsrpc-browser: 3.3.0
+      vue: 3.2.33
+    devDependencies:
+      '@vitejs/plugin-vue': 2.3.2_vue@3.2.33
+      '@vue/cli-plugin-eslint': 5.0.4
+      eslint-plugin-vue: 8.7.1
+
+  pages/pc:
+    specifiers: {}
 
 packages:
 

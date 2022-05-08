@@ -1,10 +1,6 @@
 {
-  "name": "@blog/page",
+  "name": "@blog/pages",
   "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
   "dependencies": {
     "@blog/shared": "workspace:*",
     "tsrpc-browser": "^3.3.0",

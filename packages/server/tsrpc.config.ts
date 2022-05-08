@@ -8,7 +8,7 @@ const tsrpcConf: TsrpcConfig = {
         autoFillNewPtl: false,
         watch: [
             'src',
-            '../shared/dist'
+            '../shared/src'
         ]
     }
 }

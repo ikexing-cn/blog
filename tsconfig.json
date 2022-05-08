@@ -13,5 +13,5 @@
     },
     "include": [
         "packages/**/src/**/*"
-    ]
+, "pages/pc/src/index.ts"    ]
 }
