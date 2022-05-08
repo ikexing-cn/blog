@@ -2,9 +2,12 @@
   "name": "blog",
   "private": true,
   "scripts": {
-    "build": "cd packages/shared && nr proto && nr api && nr build",
-    "dev:page": "cd packages/page && nr dev",
-    "dev:server": "cd packages/server && nr dev"
+    "tsrpc": "nr tsrpc:proto && nr tsrpc:api", 
+    "dev:page": "pnpm --filter page run dev",
+    "dev:server": "pnpm --filter server run dev",
+    "build:stub": "pnpm --filter shared run stub",
+    "tsrpc:api": "pnpm --filter shared run api",
+    "tsrpc:proto": "pnpm --filter shared run proto"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",

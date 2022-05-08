@@ -2,7 +2,8 @@
     "name": "@blog/server",
     "private": true,
     "scripts": {
-        "dev": "tsrpc dev"
+        "dev": "tsrpc dev",
+        "lint:api": "eslint ./src/api/**/*.ts --fix"
     },
     "dependencies": {
         "@blog/shared": "workspace:*",

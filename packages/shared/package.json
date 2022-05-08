@@ -11,7 +11,8 @@
   },
   "scripts": {
     "build": "unbuild",
-    "api": "tsrpc api --config tsrpc.config.ts && cd ../server && eslint ./src/api/*.ts --fix",
+    "stub": "unbuild --stub",
+    "api": "tsrpc api --config tsrpc.config.ts && pnpm --filter server run lint:api",
     "proto": "tsrpc proto --config tsrpc.config.ts && eslint ./src/serviceProto.ts --fix"
   },
   "dependencies": {
