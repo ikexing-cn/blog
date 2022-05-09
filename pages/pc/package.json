@@ -2,6 +2,6 @@
   "name": "@blog/pages-pc",
   "private": true,
   "scripts": {
-    "dev": "vite"
+    "dev": "vite --port 4000"
   }
 }

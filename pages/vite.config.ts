@@ -3,18 +3,8 @@ import { defineConfig, UserConfigExport } from 'vite'
 
 const publicConfig: UserConfigExport = defineConfig({
     plugins: [
-        vue()
-    ],
-    server: {
-        port: 4000,
-        proxy: {
-            '/api': {
-                target: 'http://localhost:3001',
-                changeOrigin: true,
-                rewrite: path => path.replace(/^\/api/, '')
-            }
-        }
-    }
+        vue({ reactivityTransform: true })
+    ]
 })
 
 export default publicConfig
