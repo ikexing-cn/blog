@@ -1,4 +1,7 @@
 {
   "name": "@blog/pages-admin",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 4001"
+  }
 }
